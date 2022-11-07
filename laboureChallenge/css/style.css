@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+.menu{
+  color: #fff;
+ }
+ a{
+   font-size: 1.5rem;
+   font-weight: bold;
+ }
+ .menu:hover {
+  color: #ffff;
+ }
+.page {
+  margin: 30px;
+  padding: 15px;
+  background: #fae9f8;
+  height: 800px;
+  border-radius: 15px;
+}
+/* ***********************H1(CHALLENGE HONORAIRE)******************************* *SECTION*/
+.titre {
+  margin: 30px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: inset 23px 23px 46px #ebe8e8, inset -23px -23px 46px #ffffff;
+  /* **************** */
+  transform: translate3d(0, 0, 0);
+  -webkit-text-fill-color: transparent !important;
+  text-fill-color: transparent !important;
+  background: url(https://www.bradley.edu/about/img/peoria/peoria-01.jpg) center
+    center repeat-x;
+  -webkit-background-clip: text !important;
+  font-size: 4rem;
+  z-index: 2;
+  animation: BGslideleft 55s infinite;
+}
+@keyframes BGslideleft {
+  0% {
+    background-position: 0% center, 0px center;
+  }
+  50% {
+    background-position: 100% center, 0px center;
+  }
+  100% {
+    background-position: 0% center, 0px center;
+  }
+}
+/* **********DATE ET HEURE*********************** */
+.cabinet{
+  color:#fff; 
+  text-align: center;
+  font-family: "arial", Times, serif;
+  font-size:3.5rem;
+  font-weight: bold;
+  /* align-items: center; */
+  text-decoration-line: underline overline; 
+  margin-bottom:20px;
+}
+.clock-outer-body {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;  
+  align-items: center;
+  height: 100px;
+  width: 100%;
+   margin: auto; 
+  border-radius: 5px;
+  background-color: #042c6c;
+}
+
+.display-time {
+  text-align: center; 
+  font-family: digital;
+  font-size: 15px;
+  font-weight: 900;
+   margin-top: 70px; 
+}
+
+.display-date {
+   color:#fff; 
+  text-align: center; 
+  font-family: "arial", Times, serif;
+  font-size: 15px;
+  font-weight: 900;
+  margin-top: 70px;
+   /* margin-left: 10px;  */
+}
+/* *********************div global************************************* */
+.quatre{
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+}
+.blockChargeClient {
+  display: flex;
+  flex-direction:column;
+}
+/*  ******************div les 4 eliment****************/
+
+/* *********************************************** */
+.blockProgress_charge {
+  width:100%;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+   /* border: #1c64ff 1px solid;   */
+}
+
+/* ************block prgressbar +dollar********************** */
+progress[value]{
+  width:160px;
+  height:20%;
+  border:1px solid #ccc;
+  border-radius:2px;
+  margin-top:120px;
+ color:#fff; 
+ border-radius: 0px;
+background: linear-gradient(145deg, #f0f0f0, #cacaca);
+box-shadow:  25px 25px 49px #bebebe,
+             -25px -25px 49px #ffffff;
+
+  background: linear-gradient(to right, #0057a9 0%,#0057a9 19%,transparent 19%,transparent 21%,#79ce00 21%,#79ce00 39%,transparent 39%,transparent 41%,#fcff00 41%,#fcff00 59%,transparent 39%,transparent 41%,#fcff00 41%,#fcff00 59%,transparent 59%,transparent 61%,#ffb750 61%,#ffb750 79%,transparent 79%,transparent 81%,#ff0000 81%,#ff0000 100%);
+	-webkit-transform:rotate(90deg);
+	-ms-transform:rotate(90deg);
+	transform:rotate(90deg);
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+}
+progress[value]::-webkit-progress-bar{background-color:transparent;position:relative;}
+progress[value]::-webkit-progress-value{width:100%;background-color:#fff;background-size:100%;position:relative;overflow:hidden;
+	 -webkit-transition:width 0.6s ease;
+	-moz-transition:width 0.6s ease;
+	-o-transition:width 0.6s ease;
+	transition:width 0.6s ease;
+}
+
+/* *********************************** */
+.blockCharge {
+  /*le divde block chargé client */
+  width: 80%;
+  height: 200px;
+  margin: 5% 1%;
+  /* border: #2fff1c 1px solid; */
+}
+.barCharge {
+  /*input  */
+  padding: 1rem;
+  text-align: center;
+  border: 0.5rem solid;
+  font-family: "Poppins", sans-serif;
+  height: 50px;
+  width: 100%;
+  font-size: 1.2rem;
+  border-image: linear-gradient(#ff512f, #dd2476, #1c64ff) 1;
+  animation: rotate 2.5s ease-in infinite;
+}
+@keyframes rotate {
+  50% {
+    border-image: linear-gradient(360deg, #ff512f, #dd2476, #1c64ff) 1;
+  }
+}
+/* *******************/
+.gif {
+  width: 100%;
+  height: 73%;
+  background-color: "rgb(0,255,255)", "rgb(255,0,255)";
+}
+/* *************PODIUM*********************** */
+/* ***************pour le trophée************** */
+#filtre {
+  list-style:none;
+  width:50px;
+  height:50px;
+  float:left;
+  margin:95px 20px 0;
+  border-radius:3px;
+  background:#3b3b3b;
+}
+#filtre li {
+  width:100%;
+  height:49px;
+  border-bottom:1px solid #2b2b2b;
+}
+#filtre li:first-child {
+  -moz-border-radius: 3px 3px 0px 0px;
+  -webkit-border-radius: 3px 3px 0px 0px;
+  border-radius: 3px 3px 0px 0px;
+}
+#filtre li:last-child {
+  border:none;
+  -moz-border-radius: 0px 0px 3px 3px;
+  -webkit-border-radius: 0px 0px 3px 3px;
+  border-radius: 0px 0px 3px 3px;
+}
+#filtre li a {
+  display:block;
+  width:100%;
+  height:49px;
+  line-height:49px;
+  text-align:center;
+  color:#fff;
+}
+/******************************************  */
+.podium{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contener {
+  width: 40%;
+  /* border:1px solid red;  */
+  margin: 50px;
+    float:centre;  
+}
+.contener li {
+  /* width: 100%; */
+  /* height:100%; */
+  /* float: left;
+  margin: 0;
+  color: green; */
+}
+.contener li img {
+  display: block;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  border: 2px solid #fff;
+  -moz-box-shadow: 1px 2px 5px 0px #888;
+  -webkit-box-shadow: 1px 2px 5px 0px #888;
+  box-shadow: 1px 2px 5px 0px #888;
+}
+.contener li .progressPodiom {
+  position: relative;
+  width: 100%;
+  height:300px;
+  margin: 0 auto;
+  background: #ebebeb;
+  -moz-border-radius: 3px 3px 0px 0px;
+  -webkit-border-radius: 3px 3px 0px 0px;
+  border-radius: 3px 3px 0px 0px;
+}
+.contener li .progressPodiom span {
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  background: #000;
+  -moz-border-radius: 3px 3px 0px 0px;
+  -webkit-border-radius: 3px 3px 0px 0px;
+  border-radius: 3px 3px 0px 0px;
+  -webkit-transition: 5s all;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-name: animationNumberProgress;
+  transition: 5s all;
+  animation-duration: 5s;
+  animation-name: animationNumberProgress;
+}
+.contener li .progressPodiom span b {
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  font-family: Georgia;
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+}
+.contener li .progressPodiom span i {
+  font-family: Georgia;
+  font-size: 18px;
+  color: #fff;
+  -webkit-transition: 5s all;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-name: animationNumberProgress;
+  transition: 5s all;
+  animation-duration: 5s;
+  animation-name: animationNumberProgress;
+}
+.contener li.gold .progressPodiom span{
+  background:#FDB91B;
+}
+.contener li.silver .progressPodiom span{
+  background:#868480;}
+  .contener li.bronze .progressPodiom span{
+    background:#c99f3f;}
+/************/
+.banniare1{
+  background-color: #042c6c;
+ margin-top: 10px;
+ padding: 10px;
+ width: 100%;
+ height: 100px;
+}
+.barRecherche{
+  margin-top: 30px;
+}
+
+
+.basDepage{
+  margin-bottom: 0;
+  position: fixed;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #042c6c;
+  color: #ffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}

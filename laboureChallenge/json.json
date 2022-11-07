@@ -1,0 +1,67 @@
+{"users":
+
+[
+    {
+        "id":1,
+        "user":{
+            "name":"chargeClient1",
+            "email":null,
+            "passWord":null
+
+        },
+        "honoraire":["mois janvi"
+
+        ]
+       
+    },
+    {
+        "id":1,
+        "user":{
+            "name":"chargeClient1",
+            "email":null,
+            "passWord":null
+
+        },
+        "honoraire":["mois janvi"
+
+        ]
+       
+    },
+    {
+        "id":1,
+        "user":{
+            "name":"chargeClient1",
+            "email":null,
+            "passWord":null
+
+        },
+        "honoraire":["mois janvi"
+
+        ]
+       
+    }
+
+]
+}
+
+select sum(montant),nom,prenom from ChargeClient 
+INNER JOIN honoraireannual ON chargeclient.idChargeClient=honoraireannual.idChargeClient
+ INSERT INTO('nad','GUZ',2022-10-04,50),
+('Alim','BEN',2022-10-04,100),
+SELECT e.nom, e.adresse
+FROM ecole as e
+JOIN formation_ecole as fe ON fe.idEcole = e.id
+JOIN formation as f ON fe.idFormation = f.id
+WHERE f.titre = "Java JEE";
+
+INSERT INTO ecole(nom) VALUES ('CNAM New-York');
+
+SELECT e.nom
+FROM ecole as e
+WHERE e.id NOT IN (
+	SELECT e.id
+	FROM ecole as e
+	JOIN formation_ecole as fe ON fe.idEcole = e.id
+	JOIN formation as f ON fe.idFormation = f.id
+	WHERE f.titre = "Java JEE"
+);
